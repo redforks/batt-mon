@@ -38,5 +38,10 @@ fn main() -> Result<()> {
         send_notification(format!("Battery level is {}%", battery_level))?;
     }
 
+    // if battery level less than 20, shutdown
+    if battery_level < 20 {
+        whatever!(system_shutdown::shutdown(), "shutdown my pc");
+    }
+
     Ok(())
 }

@@ -10,3 +10,4 @@ codegen-units = 1
 [dependencies]
 notify-rust = {version="4.11.0", default-features=false, features=["zbus", "serde"]}
 snafu = "0.8.2"
+system_shutdown = "4.0.1"
